@@ -1,3 +1,7 @@
+const slider = document.getElementById('slide')
+const docBody = document.getElementById('body')
+const buttonContainer = document.getElementsByClassName('buttons')
+
 const button = document.getElementById('btn')
 const feed = document.getElementById('feedback')
 const showChance = document.getElementById('chance')
@@ -51,6 +55,28 @@ function check() {
 }
 console.log(chance)
 showChance.innerHTML = chance
+
+
+//DarkMode js
+
+
+slider.addEventListener('click', () => {
+    // console.log('button clicked')
+    if(docBody.classList.contains('light')){
+        docBody.classList.add('dark')
+        docBody.classList.remove('light')
+        buttonContainer
+        
+    } 
+    else if(docBody.classList.contains('dark')){
+        docBody.classList.add('light')
+        docBody.classList.remove('dark')
+    }
+    
+    
+})
+
+
 
 
 

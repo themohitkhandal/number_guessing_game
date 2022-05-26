@@ -13,10 +13,18 @@
     <title>Number Guessing Game</title>
 </head>
 
-<body>
+<body id="body" class="light">
+    <div class="slide">
+        <label class="switch">
+            <input type="checkbox" id="slide">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+
     <div class="container">
         <h1>Guess The Number</h1>
-        <div class="buttons">
+        <div class="buttons border">
             <button type="button" class="btn btn-primary" onclick="userName()">Start</button>
             <button type="reset" class="btn btn-warning" onclick="resetPage()">Reset</button>
 
