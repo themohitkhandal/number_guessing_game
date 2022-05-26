@@ -35,13 +35,15 @@ function check() {
             // console.log("number too low")
             feed.innerHTML = "Number too low"
         } else {
-            console.log("something wennt wrong")
+            console.log("something went wrong")
         }
         chance--;
     }
     if(chance == 0){
         // console.log("You ran out of chances")
         feed.innerHTML = "You ran out of chances"
+        alert("Please restart the game!")
+        document.location.reload(true);
     }
     console.log(chance)
     showChance.innerHTML = chance
