@@ -1,0 +1,32 @@
+*{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.container button, input{
+    width: 100px;
+    margin: 10px;
+    /* flex-direction: row; */
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.buttons{
+    width: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    border: 2px solid black;
+    /* padding: 10px; */
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+input{
+    height: 35px;
+    width: 150px;
+}
