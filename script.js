@@ -1,11 +1,12 @@
+// Variable Declaration for DOM
 const slider = document.getElementById('slide')
 const docBody = document.getElementById('body')
 const buttonContainer = document.getElementsByClassName('buttons')
-
 const button = document.getElementById('btn')
 const feed = document.getElementById('feedback')
 const showChance = document.getElementById('chance')
 
+// Function to take username
 function userName() {
     let user = prompt("Enter your name");
 
@@ -14,18 +15,17 @@ function userName() {
     }
 }
 
+// Function to reset/reload page
 function resetPage() {
     document.location.reload(true);
 }
 
-
-
 let randNumber = Math.floor(Math.random() * 100) + 1;
 let chance = 10;
-console.log(randNumber)
+console.log('Random Number: ' + randNumber)
 
 
-
+// function to check user number with random number
 function check() {
     let userInput = document.getElementById('userInput').value;
     if (userInput != null) {
@@ -43,7 +43,7 @@ function check() {
         }
         chance--;
     }
-    if(chance == 0){
+    if (chance == 0) {
         // console.log("You ran out of chances")
         feed.innerHTML = "You ran out of chances"
         alert("Please restart the game!")
@@ -51,32 +51,29 @@ function check() {
     }
     console.log(chance)
     showChance.innerHTML = chance
-    
+
 }
 console.log(chance)
 showChance.innerHTML = chance
 
 
 //DarkMode js
-
-
 slider.addEventListener('click', () => {
     // console.log('button clicked')
-    if(docBody.classList.contains('light')){
+    if (docBody.classList.contains('light')) {
         docBody.classList.add('dark')
         docBody.classList.remove('light')
         buttonContainer
-        
-    } 
-    else if(docBody.classList.contains('dark')){
+
+    }
+    else if (docBody.classList.contains('dark')) {
         docBody.classList.add('light')
         docBody.classList.remove('dark')
     }
-    
-    
 })
 
 
-
-
-
+// Debug Function 
+function debug(){
+    console.log()
+}
