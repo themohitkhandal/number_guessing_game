@@ -109,7 +109,6 @@ class Header extends HTMLElement {
       //DarkMode js
 
       slider.addEventListener('click', () => {
-          // console.log('button clicked')
           if (docBody.classList.contains('light')) {
               docBody.classList.add('dark')
               docBody.classList.remove('light')
