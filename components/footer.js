@@ -11,6 +11,22 @@ class Footer extends HTMLElement {
             align-items: center;
             justify-content: center;
           }
+
+          a:link {
+            text-decoration: none;
+          }
+          
+          a:visited {
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+          
+          a:active {
+            text-decoration: underline;
+          }
         </style>
         <footer style="position: fixed;
         bottom: 0;
@@ -22,9 +38,9 @@ class Footer extends HTMLElement {
           <img
             src="/images/github-mark.svg"
             alt="github"
-            style="height: 20px; width: 20px; margin-right: 10px; "
+            style="height: 20px; width: 20px; margin-right: 10px;"
           />
-          <a href="https://github.com/themohitkhandal" target="_blank">themohitkhandal</a>
+          <a href="https://github.com/themohitkhandal" target="_blank"  >themohitkhandal</a>
         </div>
       </footer>
       `;

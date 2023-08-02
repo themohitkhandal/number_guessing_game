@@ -16,14 +16,14 @@
 
 
   .box {
-    width: 200px; /* Default width */
+    width: 250px; /* Default width */
     height: 100px; /* Default height */
-    
     font-size: 5vmin;
-    /* border: 1px solid; */
     justify-content: center;
     margin-bottom: 2rem;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
   }
 
   #easy-box {
