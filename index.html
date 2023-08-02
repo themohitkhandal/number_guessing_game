@@ -1,64 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
-        integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/number_logo.png">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <!-- <link rel="stylesheet" href="h1-style.css"> -->
     <title>Number Guessing Game</title>
-</head>
+  </head>
 
-<body id="body" class="dark">
-    <div class="slide">
-        <label class="switch">
-            <input type="checkbox" id="slide">
-            <span class="slider round"></span>
-        </label>
-    </div>
+  <body id="body" class="light">
 
+    <header-component></header-component>
 
     <div class="container">
-        <h1>Guess The Number</h1>
-        <div class="buttons border">
-            <button type="button" class="btn btn-primary" onclick="userName()">Start</button>
-            <button type="reset" class="btn btn-warning" onclick="resetPage()">Reset</button>
+      <h3 id="username">Hello World!</h3>
+      <h3>Guess the number between 1 - <span id="difficultyLevel"></span></h3>
+      <div class="buttons">
+        <input
+          type="text"
+          name="number"
+          id="userInput"
+          placeholder="Enter Number"
+        />
+        <button
+          type="submit"
+          class="btn btn-primary"
+          name="check"
+          id="btn"
+          onclick="check()"
+        >
+          Check
+        </button>
+      </div>
 
-        </div>
-
-        <h3 id="username">Hello</h3>
-        <h3>Guess the number between 1-100</h3>
-        <div class="buttons">
-            <input type="text" name="number" id="userInput" placeholder="Enter Number">
-            <button type="submit" class="btn btn-primary" name="check" id="btn" onclick="check()">Check</button>
-
-        </div>
-
-        <h1 id="feedback">Hints</h1>
-        <h1>Chance Left : <span id="chance"></span></h1>
-
+      <h2 id="feedback">Hints</h2>
+      <h2>Chance Left : <span id="chance"></span></h2>
+      <div class="buttons">
+        <button type="button" class="btn btn-primary" onclick="goHome()">
+          Go Home
+        </button>
+        <button type="reset" class="btn btn-warning" onclick="resetPage()">
+          Reset
+        </button>
+      </div>
     </div>
+    <footer-component></footer-component>
 
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- <script>console.log()</script> -->
     <script src="script.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    -->
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,10 +1,45 @@
 // Variable Declaration for DOM
-const slider = document.getElementById('slide')
+
 const docBody = document.getElementById('body')
 const buttonContainer = document.getElementsByClassName('buttons')
 const button = document.getElementById('btn')
 const feed = document.getElementById('feedback')
 const showChance = document.getElementById('chance')
+
+const urlParams = new URLSearchParams(window.location.search);
+const difficultyLevel = urlParams.get('difficultyLevel');
+
+console.log(difficultyLevel)
+
+let level;
+let defaultChances
+
+switch (difficultyLevel) {
+    case 'easy':
+        level = 10
+        defaultChances = 5
+        break;
+    case 'medium':
+        level = 100
+        defaultChances = 10
+        break;
+    case 'hard':
+        level = 1000 
+        defaultChances = 15
+        break;
+    default:
+        break;
+}
+
+if(difficultyLevel == 'easy') {
+    document.getElementById('difficultyLevel').innerHTML += '10'
+} else if (difficultyLevel == 'medium') {
+    document.getElementById('difficultyLevel').innerHTML += '100'
+} else if (difficultyLevel == 'hard') {
+    document.getElementById('difficultyLevel').innerHTML += '1000'
+}
+
+
 
 // Function to take username
 function userName() {
@@ -15,23 +50,33 @@ function userName() {
     }
 }
 
+// Send back to home.html
+function goHome() {
+    document.location.href = "home.html"
+}
+
 // Function to reset/reload page
 function resetPage() {
     document.location.reload(true);
 }
 
-let randNumber = Math.floor(Math.random() * 100) + 1;
-let chance = 10;
+let randNumber = Math.floor(Math.random() * level) + 1;
+let chance = defaultChances;
 console.log('Random Number: ' + randNumber)
 
 
 // function to check user number with random number
 function check() {
     let userInput = document.getElementById('userInput').value;
-    if (userInput != null) {
+    if (userInput != '') {
         if (userInput == randNumber) {
             // console.log("You gueesd it right" + randNumber)
             feed.innerHTML = "Congratulations! You guessed it correct"
+            button.disabled = true;
+            let won = confirm("You Won, Wanna play again?")
+            if(won) {
+                document.location.reload(true)
+            }
         } else if (userInput > randNumber) {
             // console.log("number too high")
             feed.innerHTML = "Number too high"
@@ -42,6 +87,9 @@ function check() {
             console.log("something went wrong")
         }
         chance--;
+    } else if (userInput == ''){
+        console.log("empty")
+        feed.innerHTML = "Please enter a number"
     }
     if (chance == 0) {
         // console.log("You ran out of chances")
@@ -49,28 +97,15 @@ function check() {
         alert("Please restart the game!")
         document.location.reload(true);
     }
-    console.log(chance)
+    console.log("Chance: ", chance)
     showChance.innerHTML = chance
 
 }
-console.log(chance)
+console.log("Chance: ", chance)
 showChance.innerHTML = chance
 
 
-//DarkMode js
-slider.addEventListener('click', () => {
-    // console.log('button clicked')
-    if (docBody.classList.contains('light')) {
-        docBody.classList.add('dark')
-        docBody.classList.remove('light')
-        buttonContainer
 
-    }
-    else if (docBody.classList.contains('dark')) {
-        docBody.classList.add('light')
-        docBody.classList.remove('dark')
-    }
-})
 
 
 // Debug Function 
