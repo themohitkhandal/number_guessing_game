@@ -27,12 +27,17 @@ class Footer extends HTMLElement {
           a:active {
             text-decoration: underline;
           }
+          .overlay {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(1px);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+          }
         </style>
-        <footer style="position: fixed;
-        bottom: 0;
-        width: 100%;
-        margin-bottom: 20px
-        ">
+        <footer class="overlay">
         <!-- <p>Developer: Mohit Khandal</p> -->
         <div class="bottom-link">
           <img

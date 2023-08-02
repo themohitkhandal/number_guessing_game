@@ -49,12 +49,8 @@ input {
 }
 
 .buttons {
-  width: auto;
-  margin: 20px 50px 50px 50px;
   display: flex;
-  /* border: 2px solid black; */
-  /* padding: 10px; */
-  align-items: baseline;
+  align-items: center;
   justify-content: space-evenly;
 }
 
