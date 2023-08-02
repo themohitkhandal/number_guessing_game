@@ -40,7 +40,7 @@ class Footer extends HTMLElement {
             alt="github"
             style="height: 20px; width: 20px; margin-right: 10px;"
           />
-          <a href="https://github.com/themohitkhandal" target="_blank"  >themohitkhandal</a>
+          <a href="https://github.com/themohitkhandal" target="_blank">themohitkhandal</a>
         </div>
       </footer>
       `;

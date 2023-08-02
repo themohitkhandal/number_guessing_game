@@ -5,6 +5,10 @@ const buttonContainer = document.getElementsByClassName('buttons')
 const button = document.getElementById('btn')
 const feed = document.getElementById('feedback')
 const showChance = document.getElementById('chance')
+const showImg = document.getElementById('showImg')
+
+const hidden = showImg.getAttribute("hidden")
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const difficultyLevel = urlParams.get('difficultyLevel');
@@ -69,11 +73,14 @@ function check() {
     if (userInput != '') {
         if (userInput == randNumber) {
             feed.innerHTML = "Congratulations! You guessed it correct"
+
+            showImg.style.display = "block"
+
             button.disabled = true;
-            let won = confirm("You Won, Wanna play again?")
-            if(won) {
-                document.location.reload(true)
-            }
+            // let won = confirm("You Won, Wanna play again?")
+            // if(won) {
+            //     document.location.reload(true)
+            // }
         } else if (userInput > randNumber) {
             feed.innerHTML = "Number too high"
         } else if (userInput < randNumber) {
