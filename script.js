@@ -52,7 +52,7 @@ function userName() {
 
 // Send back to home.html
 function goHome() {
-    document.location.href = "home.html"
+    document.location.href = "index.html"
 }
 
 // Function to reset/reload page

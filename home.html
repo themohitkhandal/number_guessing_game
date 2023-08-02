@@ -19,9 +19,8 @@
       integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/number_logo.png" />
+    <link rel="icon" type="image/x-icon" href="/images/number_logo.png">
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <!-- <link rel="stylesheet" href="h1-style.css"> -->
@@ -29,19 +28,48 @@
   </head>
 
   <body id="body" class="light">
+
     <header-component></header-component>
 
-    <div style="align-items: center; min-height: 100%; justify-content: flex-end;" ;>
-      <div style="font-size: 4.9vmin">Choose Difficulty Level</div>
-      <div class="box-container">
-        <div class="box" id="easy-box"><p>Easy: 1-10</p></div>
-        <div class="box" id="medium-box"><p>Medium: 1-100</p></div>
-        <div class="box" id="hard-box"><p>Hard: 1-1000</p></div>
+    <div class="container">
+      <h3 id="username">Hello World!</h3>
+      <h3>Guess the number between 1 - <span id="difficultyLevel"></span></h3>
+      <div class="buttons">
+        <input
+          type="text"
+          name="number"
+          id="userInput"
+          placeholder="Enter Number"
+        />
+        <button
+          type="submit"
+          class="btn btn-primary"
+          name="check"
+          id="btn"
+          onclick="check()"
+        >
+          Check
+        </button>
+      </div>
+
+      <h2 id="feedback">Hints</h2>
+      <h2>Chance Left : <span id="chance"></span></h2>
+      <div class="buttons">
+        <button type="button" class="btn btn-primary" onclick="goHome()">
+          Go Home
+        </button>
+        <button type="reset" class="btn btn-warning" onclick="resetPage()">
+          Reset
+        </button>
       </div>
     </div>
-
     <footer-component></footer-component>
 
-    <script src="home.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

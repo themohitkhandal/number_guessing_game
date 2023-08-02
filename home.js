@@ -6,13 +6,13 @@ var difficulty;
 
 easyBox.addEventListener("click", () => {
   difficulty = "easy";
-  document.location.href = `index.html?difficultyLevel=${encodeURIComponent(difficulty)}`
+  document.location.href = `home.html?difficultyLevel=${encodeURIComponent(difficulty)}`
 });
 mediumBox.addEventListener("click", () => {
   difficulty = "medium";
-  document.location.href = `index.html?difficultyLevel=${encodeURIComponent(difficulty)}`
+  document.location.href = `home.html?difficultyLevel=${encodeURIComponent(difficulty)}`
 });
 hardBox.addEventListener("click", () => {
   difficulty = "hard";
-  document.location.href = `index.html?difficultyLevel=${encodeURIComponent(difficulty)}`
+  document.location.href = `home.html?difficultyLevel=${encodeURIComponent(difficulty)}`
 });
