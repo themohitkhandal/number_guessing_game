@@ -8,6 +8,7 @@ class Header extends HTMLElement {
       <style>
       .top-container {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         width: auto;
         align-items: center;
@@ -15,7 +16,7 @@ class Header extends HTMLElement {
       }
 
       #header-title {
-        font-size: 7.9vmin;
+        font-size: 8.9vmin;
       }
         
       /* slider css */
@@ -87,8 +88,8 @@ class Header extends HTMLElement {
 
       .logo {
         vertical-align: middle;
-        width: 75px;
-        height: 75px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
       }
       </style>
@@ -96,12 +97,6 @@ class Header extends HTMLElement {
         <div class="top-container">
             <img src="images/number_logo.png" class="logo" />
             <div id="header-title">Guess The Number</div>
-            <div class="slide">
-                <label class="switch">
-                    <input type="checkbox" id="slide" />
-                    <span class="slider round"></span>
-                </label>
-            </div>
         </div>
       </header>
       <script>

@@ -8,7 +8,9 @@
 
 .box-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 30px;
      align-items: center;
   }
