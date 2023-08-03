@@ -2,11 +2,11 @@
 
  <img src="/images/icon.png" width="150px" height="150px">
 
-## Description
+## 🀄️ Description
 
 "Mystery Number Hunt" is an exciting number guessing game that challenges players to use their deduction skills and intuition to identify a secret number within a specified range. The game's objective is simple: uncover the hidden mystery number with as few attempts as possible.
 
-## Gameplay
+## 🎮 Gameplay
 
 - **Selecting Difficulty:** At the start of the game, players choose from different difficulty levels, each offering a specific range of numbers within which the mystery number lies. The range can vary from easy (e.g., 1 to 10) to difficult (e.g., 1 to 1000).
 
@@ -20,7 +20,7 @@
 
 - **Leaderboard and Competitions:** The game may include a global leaderboard to showcase the top players with the best scores. This fosters friendly competition among players worldwide and encourages them to improve their guessing skills.
 
-## Features
+## 🎲 Features
 
 - Attractive and intuitive user interface.
 - Various difficulty levels to accommodate players of all skill levels.
@@ -29,16 +29,16 @@
 - An adaptive hint system to provide appropriate clues based on player performance.
 - In-app purchases for cosmetic enhancements and additional features (if applicable).
 
-## How to run
+## 🤖 How to run
 
 1. Just go on this link to play the game [Mystery Number Hunt](https://mysterynumberhunt.netlify.app/).
 
-## Screenshots
+## 📷 Screenshots
 
 ![Screenshot 1](screenshot.png)
 
 
-## Contributing
+## 🙋🏻‍♂️ Contributing
 
 We welcome contributions from the community to improve and enhance the game. If you find any bugs or have suggestions, please open an issue or submit a pull request.
 
