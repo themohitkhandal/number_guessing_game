@@ -22,10 +22,7 @@
 
 - Attractive and intuitive user interface.
 - Various difficulty levels to accommodate players of all skill levels.
-- Engaging sound effects and visuals to enhance the gaming experience.
-- Option to play in single-player mode or challenge friends in multiplayer mode.
 - An adaptive hint system to provide appropriate clues based on player performance.
-- In-app purchases for cosmetic enhancements and additional features (if applicable).
 
 ## 🤖 How to run
 
