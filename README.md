@@ -18,8 +18,6 @@
 
 - **Limited Attempts:** The number of attempts allowed varies depending on the difficulty level chosen. Players must use their guesses strategically to uncover the mystery number within the allotted attempts. The fewer attempts they take, the higher their score will be.
 
-- **Leaderboard and Competitions:** The game may include a global leaderboard to showcase the top players with the best scores. This fosters friendly competition among players worldwide and encourages them to improve their guessing skills.
-
 ## 🎲 Features
 
 - Attractive and intuitive user interface.
