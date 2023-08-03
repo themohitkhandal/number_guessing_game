@@ -25,14 +25,34 @@
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <!-- <link rel="stylesheet" href="h1-style.css"> -->
-    <title>Number Guessing Game</title>
+    <title>Mystery Number Hunt</title>
   </head>
 
   <body id="body" class="light">
-    
     <header-component></header-component>
 
-    <div style="margin-top: 40px;">
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 400px;
+      "
+    >
+      <p>
+        "Mystery Number Hunt" is an exciting number guessing game that
+        challenges players to use their deduction skills and intuition to
+        identify a secret number within a specified range. The game's objective
+        is simple: uncover the hidden mystery number with as few attempts as
+        possible.
+      </p>
+    </div>
+
+    <div style="margin-top: 40px">
       <div style="font-size: 5.9vmin">Choose Difficulty Level</div>
       <div class="box-container">
         <div class="box" id="easy-box"><p>Easy: 1-10</p></div>

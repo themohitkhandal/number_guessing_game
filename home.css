@@ -1,40 +1,38 @@
 #body {
-    font-family: 'Handjet', cursive;
-    letter-spacing: 1px;
-    display: flex;
-    flex-direction: column;
-   
-  }
+  font-family: "Handjet", cursive;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+}
 
 .box-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 30px;
-     align-items: center;
-  }
-  
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: center;
+  height: 15rem;
+}
 
-  .box {
-    width: 250px; /* Default width */
-    height: 100px; /* Default height */
-    font-size: 5vmin;
-    justify-content: center;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
+.box {
+  width: 250px; /* Default width */
+  height: 100px; /* Default height */
+  font-size: 5vmin;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-  #easy-box {
-    background-color: #4db42b;
-  }
-  #medium-box {
-    background-color: #d3d62b;
-  }
-  #hard-box {
-    background-color: #e74c3c;
-  }
+#easy-box {
+  background-color: #4db42b;
+}
+#medium-box {
+  background-color: #d3d62b;
+}
+#hard-box {
+  background-color: #e74c3c;
+}

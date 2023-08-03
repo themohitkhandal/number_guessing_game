@@ -96,7 +96,7 @@ class Header extends HTMLElement {
       <header>
         <div class="top-container">
             <img src="images/number_logo.png" class="logo" />
-            <div id="header-title">Guess The Number</div>
+            <div id="header-title">Mystery Number Hunt</div>
         </div>
       </header>
       <script>
